@@ -75,3 +75,8 @@ Defaz todas as migrations
 ```
 yarn sequelize db:migrate:undo:all
 ```
+
+## Gerando hash da senha
+```
+yarn add bcryptjs
+```

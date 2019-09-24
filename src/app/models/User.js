@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
+import bcrypt from 'bcryptjs';
 
 class User extends Model {
     // metodo chamado automaticamente pelo sequelize
@@ -14,6 +15,7 @@ class User extends Model {
                 // Em outras palavras, só as colunas inseridas pelo usuário
                 name: Sequelize.STRING,
                 email: Sequelize.STRING,
+                password: Sequelize.VIRTUAL, // campo que não vai existir na base de dados, só no meu código/model
                 password_hash: Sequelize.STRING,
                 provider: Sequelize.BOOLEAN,
             },
@@ -22,6 +24,14 @@ class User extends Model {
                 // veja mais opções com CTRL+SPACE
             }
         );
+
+        this.addHook('beforeSave', async user => {
+            if (user.password) {
+                user.password_hash = await bcrypt.hash(user.password, 8);
+            }
+        });
+
+        return this;
     }
 }
 
