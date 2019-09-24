@@ -1,7 +1,7 @@
 // js básico (antes do import/export por causa do sequelize)
 
 module.exports = {
-    dialect: 'postrgres',
+    dialect: 'postgres',
     host: 'localhost',
     username: 'postgres',
     password: 'docker',

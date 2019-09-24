@@ -54,3 +54,24 @@ sequelize-cli: ajuda na criação de migrations etc.
 ```
 yarn add pg pg-hstore
 ```
+
+## 8 - Migration de usuário
+Para facilitar, e não precisar criar o arquivo de migration todo na mão, posso usar o sequelize-cli
+```
+yarn sequelize migration:create --name=create-users
+```
+
+Rodar nossa primeira migration
+```
+yarn sequelize db:migrate
+```
+
+Defaz a última migration
+```
+yarn sequelize db:migrate:undo
+```
+
+Defaz todas as migrations
+```
+yarn sequelize db:migrate:undo:all
+```
