@@ -95,3 +95,8 @@ yarn add bcryptjs
 yarn add jsonwebtoken
 ```
 https://www.md5online.org/
+
+## Middleware de autenticação
+- Depois de autenticado, tenho que enviar meu token em toda requisição
+- Posso enviar o Token pelo Header ou, no Insominia, cliando em Auth > Bearer Token.
+    - pelo Header, uso o nome do header igual a "Authorization" e o valor igual a "Bearer <token>"
