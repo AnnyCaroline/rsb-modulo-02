@@ -80,3 +80,8 @@ yarn sequelize db:migrate:undo:all
 ```
 yarn add bcryptjs
 ```
+
+## JWT
+Forma de autenticação em APIs REST
+Json Web Token
+Diferente das formas de autenticação MVC normal, com a View retornando HTML
