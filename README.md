@@ -82,6 +82,10 @@ yarn add bcryptjs
 ```
 
 ## JWT
-Forma de autenticação em APIs REST
-Json Web Token
-Diferente das formas de autenticação MVC normal, com a View retornando HTML
+- Forma de autenticação em APIs REST
+- Json Web Token
+- Diferente das formas de autenticação MVC normal, com a View retornando HTML
+- POST http://api.com/sessions recebe email e senha, acessa o BD e retorna um token JWT
+    - Header: qual tipo de token a gente gerou, qual algoritmo usamos, etc.
+    - Payload: informações não sensíveis do usuário. E-mail, id etc.
+    - Assinatura: garante que o token não foi alterado no meio do caminho.
