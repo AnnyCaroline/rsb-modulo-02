@@ -1,7 +1,9 @@
-import { Model, Sequelize } from 'sequelize';
+import Sequelize, { Model } from 'sequelize';
 
 class User extends Model {
     // metodo chamado automaticamente pelo sequelize
+
+    // sequelize é a minha conexão com o bd
     static init(sequelize) {
         super.init(
             {
@@ -22,3 +24,5 @@ class User extends Model {
         );
     }
 }
+
+export default User;
