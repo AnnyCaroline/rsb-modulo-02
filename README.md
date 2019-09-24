@@ -81,7 +81,7 @@ yarn sequelize db:migrate:undo:all
 yarn add bcryptjs
 ```
 
-## JWT
+## Conceitos de JWT
 - Forma de autenticação em APIs REST
 - Json Web Token
 - Diferente das formas de autenticação MVC normal, com a View retornando HTML
@@ -89,3 +89,9 @@ yarn add bcryptjs
     - Header: qual tipo de token a gente gerou, qual algoritmo usamos, etc.
     - Payload: informações não sensíveis do usuário. E-mail, id etc.
     - Assinatura: garante que o token não foi alterado no meio do caminho.
+
+## Autenticação JWT
+```
+yarn add jsonwebtoken
+```
+https://www.md5online.org/
