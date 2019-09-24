@@ -12,6 +12,8 @@ import routes from './routes';
 // yarn add sucrase nodemon -D
 // o nodemon é p/ "live reload"
 
+import './database';
+
 class App {
     constructor() {
         this.server = express(); // igual a nossa antiga var app
