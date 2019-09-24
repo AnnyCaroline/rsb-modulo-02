@@ -14,7 +14,7 @@ import routes from './routes';
 
 class App {
     constructor() {
-        this.server = express(); //igual a nossa antiga var app
+        this.server = express(); // igual a nossa antiga var app
 
         this.middlewares();
         this.routes();
@@ -29,7 +29,7 @@ class App {
     }
 }
 
-//sintaxe antiga: module.exports = new App().server;
+// sintaxe antiga: module.exports = new App().server;
 export default new App().server;
 
 // inicialmente eu rodava com node src/server.js
