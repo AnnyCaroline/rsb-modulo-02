@@ -42,3 +42,15 @@ Estamos utilizando o programa Postbird para visualizar nossos bds
 - prettier: ```yarn add prettier eslint-config-prettier eslint-plugin-prettier -D```
 - Corrigir todos os arquivos de uma vez: ```yarn eslint --fix src --ext .js```
 - Extensão: editor config (muito útil para equipes que usam editores diferentes). Fazer uma configuração padrão entre vários os editores
+
+## 7 - Configurando o Sequelize
+```
+yarn add sequelize
+yarn add sequelize-cli -D
+```
+
+sequelize-cli: ajuda na criação de migrations etc.
+
+```
+yarn add pg pg-hstore
+```
